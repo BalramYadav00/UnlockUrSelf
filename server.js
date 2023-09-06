@@ -10,7 +10,6 @@ const doctorRoute = require("./routes/doctorsRoute");
 const path = require("path");
 const cors = require("cors");
 
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
