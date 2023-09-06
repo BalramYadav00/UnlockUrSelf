@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const app = express();
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
@@ -8,7 +8,8 @@ const userRoute = require("./routes/userRoute");
 const adminRoute = require("./routes/adminRoute");
 const doctorRoute = require("./routes/doctorsRoute");
 const path = require("path");
-const cors = require('cors');
+const cors = require("cors");
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
